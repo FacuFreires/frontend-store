@@ -1,0 +1,123 @@
+:root {
+  /* Fuentes */
+  --titulos: "Passion One", cursive;
+  --descripcion: "Shadows Into Light", cursive;
+  --precios: "Yellowtail", cursive;
+
+  /* Colores */
+  /* Sunset */
+  --azulado: #355c7d;
+  --rojizoOscuro: #725a7a;
+  --rojizoClaro: #c56d86;
+  --rojizo: #ff7582;
+
+  /* #02w */
+  --oscuro: #314d63;
+  --celeste: #b2e8e8;
+  --verde: #8fb9ab;
+  --amarillo: #f4d096;
+  --naranja: #f08976;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Globales */
+
+body {
+  background-color: var(--azulado);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+p {
+  font-family: var(--descripcion);
+  font-size: 1.8rem;
+  color: var(--celeste);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: var(--rojizo);
+  font-family: var(--titulos);
+}
+
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header__logo {
+  width: 18rem;
+  margin: 2rem 0;
+}
+
+/* Navegación */
+
+.navegacion {
+  background-color: var(--oscuro);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navegacion__enlace {
+  font-family: var(--titulos);
+  font-size: 3rem;
+  color: var(--celeste)
+}
+
+.navegacion__enlace--activo,
+.navegacion__enlace:hover {
+  color: var(--amarillo)
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--oscuro);
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+
+.footer__texto {
+  text-align: center;
+  font-size: 2.2rem;
+}
