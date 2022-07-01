@@ -32,23 +32,65 @@
   </head>
   <body>
     <header class="header">
-        <a href="index.html">
-            <img class="header__logo" src="./img/logo3.png" alt="Logotipo">
-        </a>
+      <a href="index.html">
+        <img class="header__logo" src="./img/logo3.png" alt="Logotipo" />
+      </a>
     </header>
 
     <nav class="navegacion">
-        <a class="navegacion__enlace" href="index.html">Tienda</a>
-        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+      <a class="navegacion__enlace" href="index.html">Tienda</a>
+      <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
     </nav>
 
     <main class="contenedor">
-        <h1>Producto</h1>
+      <h1>React Js</h1>
+
+      <div class="camisa">
+        <img
+          class="camisa__imagen"
+          src="./img/3.jpg"
+          alt="Imagen del Producto"
+        />
+
+        <div class="camisa__contenido">
+          <p class="camisa__texto">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Consectetur suscipit libero aperiam beatae magnam molestias?
+            Repellendus perspiciatis esse adipisci corporis neque minus
+            molestiae mollitia voluptates in! Quam ab nostrum adipisci?
+          </p>
+
+          <form class="formulario" action="">
+            <select class="formulario__campo">
+              <option disabled selected>-- Seleccionar Talle --</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+
+            <!-- <select class="formulario__campo">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+              <option value="">7</option>
+              <option value="">8</option>
+              <option value="">9</option>
+            </select> -->
+            <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+            <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+          </form>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
-        <p class="footer__texto">Facundo Freires - Todos los derechos reservados</p>
+      <p class="footer__texto">
+        Facundo Freires - Todos los derechos reservados
+      </p>
     </footer>
-
   </body>
 </html>
